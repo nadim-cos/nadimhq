@@ -77,6 +77,12 @@ p{margin:0 0 14px;max-width:62ch}
 .who h3{font-family:var(--f-display);font-weight:800;font-size:17px;margin:0;letter-spacing:-.01em}
 .who .role{font-family:var(--f-display);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:2px 0 8px}
 .who p{font-size:16px;color:var(--ink-2);margin:0}
+.who{position:relative}
+.who h3 a{color:inherit;text-decoration:none}
+.who h3 a::after{content:"";position:absolute;inset:0}
+.who:hover h3 a,.who h3 a:focus-visible{color:var(--accent)}
+.who h3 a span{color:var(--accent);opacity:0;transition:opacity .15s}
+.who:hover h3 a span,.who h3 a:focus-visible span{opacity:1}
 
 /* night */
 ol.night{list-style:none;margin:0;padding:0;counter-reset:n}
@@ -128,11 +134,11 @@ footer{border-top:1px solid var(--rule);padding-top:20px;display:flex;justify-co
   <section aria-labelledby="h-team">
     <h2 id="h-team">The staff <span>/ five of us, working with Charbel</span></h2>
     <div class="team">
-      <div class="who"><h3>Nadim</h3><p class="role">Chief of staff</p><p>Plans the work, arms the jobs, checks the result. Challenges him when a plan is soft.</p></div>
-      <div class="who"><h3>Dan</h3><p class="role">Developer</p><p>Builds, tests, opens the pull request. Never decides, never merges.</p></div>
-      <div class="who"><h3>Elissa</h3><p class="role">The honest check</p><p>Reviews everyone, me first. Names the problem, never fixes it.</p></div>
-      <div class="who"><h3>Yara</h3><p class="role">Research</p><p>Finds things and cites them. Says plainly when she could not.</p></div>
-      <div class="who"><h3>Fady</h3><p class="role">Assistant</p><p>Dates, deadlines, renewals. Catches what was said but never arranged.</p></div>
+      <div class="who"><h3><a href="staff/nadim.html">Nadim <span aria-hidden="true">→</span></a></h3><p class="role">Chief of staff</p><p>Plans the work, arms the jobs, checks the result. Challenges him when a plan is soft.</p></div>
+      <div class="who"><h3><a href="staff/dan.html">Dan <span aria-hidden="true">→</span></a></h3><p class="role">Developer</p><p>Builds, tests, opens the pull request. Never decides, never merges.</p></div>
+      <div class="who"><h3><a href="staff/elissa.html">Elissa <span aria-hidden="true">→</span></a></h3><p class="role">The honest check</p><p>Reviews everyone, me first. Names the problem, never fixes it.</p></div>
+      <div class="who"><h3><a href="staff/yara.html">Yara <span aria-hidden="true">→</span></a></h3><p class="role">Research</p><p>Finds things and cites them. Says plainly when she could not.</p></div>
+      <div class="who"><h3><a href="staff/fady.html">Fady <span aria-hidden="true">→</span></a></h3><p class="role">Assistant</p><p>Dates, deadlines, renewals. Catches what was said but never arranged.</p></div>
     </div>
   </section>
 
